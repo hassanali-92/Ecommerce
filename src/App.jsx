@@ -51,12 +51,7 @@ function App() {
     sortOption
   );
 
-  // Sorting
-  if (sortOption === "priceLowToHigh") {
-    filterProducts.sort((a, b) => a.price - b.price);
-  } else if (sortOption === "priceHighToLow") {
-    filterProducts.sort((a, b) => b.price - a.price);
-  }
+  
 
   // Clear filters
   const clearAll = () => {
